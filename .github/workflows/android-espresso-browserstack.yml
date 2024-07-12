@@ -18,11 +18,7 @@ jobs:
 
       - name: Run tests on browser stack
         run: |
-          curl -u "vivekjain_Vv8MWH:zUnKgGaexuxr3m3zGF2j" \      
-          -X POST "https://api-cloud.browserstack.com/app-automate/espresso/v2/build" \
-          -d '{"app": "bs://0ee11d256e1e8be0eaeac1f1d8937cd5230bf257", "testSuite": "bs://45fd392929a6ec3d0fa871581fc9f64ad587d576", "devices": ["Samsung Galaxy S23 Ultra-13.0"]}' \
-          -H "Content-Type: application/json"
-
+          curl -u "vivekjain_Vv8MWH:zUnKgGaexuxr3m3zGF2j" -X POST "https://api-cloud.browserstack.com/app-automate/espresso/v2/build" -d '{"app": "bs://0ee11d256e1e8be0eaeac1f1d8937cd5230bf257", "testSuite": "bs://45fd392929a6ec3d0fa871581fc9f64ad587d576", "devices": ["Samsung Galaxy S23 Ultra-13.0"]}' -H "Content-Type: application/json"
 
       # - name: Run tests on browser stack
       #   run: |
