@@ -18,4 +18,4 @@ jobs:
 
       - name: Run tests on browser stack
         run: |
-          curl -u "${{ secrets.BROWSERSTACK_USERNAME }}:${{ secrets.BROWSERSTACK_ACCESS_KEY }}" -X POST "https://api-cloud.browserstack.com/app-automate/espresso/v2/build" -d '{"app": "${{ secrets.APP_URL }}", "testSuite": "${{ secrets.TEST_APP_URL }}", "devices": ["Samsung Galaxy S23 Ultra-13.0"]}' -H "Content-Type: application/json"
+          curl -u "${{ secrets.BROWSERSTACK_USERNAME }}:${{ secrets.BROWSERSTACK_ACCESS_KEY }}" -X POST "https://api-cloud.browserstack.com/app-automate/espresso/v2/build" -d '{"app": ${{ secrets.APP_URL }}, "testSuite": ${{ secrets.TEST_APP_URL }}, "devices": ["Samsung Galaxy S23 Ultra-13.0"]}' -H "Content-Type: application/json"
